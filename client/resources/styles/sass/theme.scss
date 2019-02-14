@@ -1,3 +1,5 @@
+$description_color: #abc;
+
 .full-height {
 	height: 100vh;
 }
@@ -14,6 +16,10 @@
 	}
 }
 
+#over-header {
+	background-image: linear-gradient(190deg, rgba(0, 0, 0, 0) 95%, $description_color 95.1%, $description_color);
+}
+
 #about-wallpaper {
 	background-image: url('/images/profile.jpg');
 
@@ -26,7 +32,13 @@
 	}
 }
 
-$description_color: #abc;
+#about-intro {
+	background-color: $description_color;
+}
+
+#commentary-intro {
+	background-image: linear-gradient(-1deg, rgba(0, 0, 0, 0) 30%, $description_color 30.6%, $description_color);
+}
 
 #description {
 	@media screen and (orientation: landscape) {
@@ -42,10 +54,6 @@ $description_color: #abc;
 		background-image: linear-gradient(170deg, rgba(0, 0, 0, 0) 50%, $description_color 50.1%, $description_color);
 		padding-top: 50%
 	}
-}
-
-#about-intro {
-	background-color: $description_color;
 }
 
 #my-skills {

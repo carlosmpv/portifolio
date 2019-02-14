@@ -17,6 +17,10 @@
   }
 }
 
+#over-header {
+  background-image: linear-gradient(190deg, rgba(0, 0, 0, 0) 95%, #abc 95.1%, #abc);
+}
+
 #about-wallpaper {
   background-image: url("/images/profile.jpg");
 }
@@ -29,6 +33,14 @@
   #about-wallpaper {
     background-size: auto 100%;
   }
+}
+
+#about-intro {
+  background-color: #abc;
+}
+
+#commentary-intro {
+  background-image: linear-gradient(-1deg, rgba(0, 0, 0, 0) 30%, #abc 30.6%, #abc);
 }
 
 @media screen and (orientation: landscape) {
@@ -46,10 +58,6 @@
     background-image: linear-gradient(170deg, rgba(0, 0, 0, 0) 50%, #abc 50.1%, #abc);
     padding-top: 50%;
   }
-}
-
-#about-intro {
-  background-color: #abc;
 }
 
 @media screen and (orientation: landscape) {
