@@ -1,4 +1,74 @@
 @charset "UTF-8";
+.full-height {
+  height: 100vh;
+}
+
+#header-wallpaper {
+  background-image: url("/images/profile.jpg");
+}
+@media screen and (orientation: landscape) {
+  #header-wallpaper {
+    background-size: 100% auto;
+  }
+}
+@media screen and (orientation: portrait) {
+  #header-wallpaper {
+    background-size: auto 100%;
+  }
+}
+
+#about-wallpaper {
+  background-image: url("/images/profile.jpg");
+}
+@media screen and (orientation: landscape) {
+  #about-wallpaper {
+    background-size: 100% auto;
+  }
+}
+@media screen and (orientation: portrait) {
+  #about-wallpaper {
+    background-size: auto 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  #description {
+    background-image: -webkit-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, #abc 20.1%, #abc);
+    background-image: -o-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, #abc 20.1%, #abc);
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0) 20%, #abc 20.1%, #abc);
+    padding-left: 20%;
+  }
+}
+@media screen and (orientation: portrait) {
+  #description {
+    background-image: -webkit-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, #abc 50.1%, #abc);
+    background-image: -o-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, #abc 50.1%, #abc);
+    background-image: linear-gradient(170deg, rgba(0, 0, 0, 0) 50%, #abc 50.1%, #abc);
+    padding-top: 50%;
+  }
+}
+
+#about-intro {
+  background-color: #abc;
+}
+
+@media screen and (orientation: landscape) {
+  #my-skills {
+    background-image: -webkit-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, #abc 20.1%, #abc);
+    background-image: -o-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, #abc 20.1%, #abc);
+    background-image: linear-gradient(-80deg, rgba(0, 0, 0, 0) 20%, #abc 20.1%, #abc);
+    padding-right: 20%;
+  }
+}
+@media screen and (orientation: portrait) {
+  #my-skills {
+    background-image: -webkit-linear-gradient(-100deg, #abc 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(-100deg, #abc 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(-190deg, #abc 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+    padding-bottom: 50%;
+  }
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

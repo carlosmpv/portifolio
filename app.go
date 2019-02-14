@@ -15,6 +15,7 @@ func main() {
 	server.Static("/styles", "client/resources/styles")
 	server.Static("/scripts", "client/resources/scripts")
 	server.Static("/libs", "client/resources/bower_components")
+	server.Static("/images", "client/resources/images")
 
 	server.GET("/", func(c *gin.Context) { c.Redirect(302, "/view") })
 

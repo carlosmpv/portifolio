@@ -1,1 +1,67 @@
+.full-height {
+	height: 100vh;
+}
+
+#header-wallpaper {
+	background-image: url('/images/profile.jpg');
+
+	@media screen and (orientation: landscape) {
+		background-size: 100% auto;
+	}
+
+	@media screen and (orientation: portrait) {
+		background-size: auto 100%;
+	}
+}
+
+#about-wallpaper {
+	background-image: url('/images/profile.jpg');
+
+	@media screen and (orientation: landscape) {
+		background-size: 100% auto;
+	}
+
+	@media screen and (orientation: portrait) {
+		background-size: auto 100%;
+	}
+}
+
+$description_color: #abc;
+
+#description {
+	@media screen and (orientation: landscape) {
+		background-image: -webkit-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		background-image: -o-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		background-image: linear-gradient(100deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		padding-left: 20%
+	}
+
+	@media screen and (orientation: portrait) {
+		background-image: -webkit-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, $description_color 50.1%, $description_color);
+		background-image: -o-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, $description_color 50.1%, $description_color);
+		background-image: linear-gradient(170deg, rgba(0, 0, 0, 0) 50%, $description_color 50.1%, $description_color);
+		padding-top: 50%
+	}
+}
+
+#about-intro {
+	background-color: $description_color;
+}
+
+#my-skills {
+	@media screen and (orientation: landscape) {
+		background-image: -webkit-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		background-image: -o-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		background-image: linear-gradient(-80deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		padding-right: 20%;
+	}
+
+	@media screen and (orientation: portrait) {
+		background-image: -webkit-linear-gradient(-100deg, $description_color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+		background-image: -o-linear-gradient(-100deg, $description_color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+		background-image: linear-gradient(-190deg, $description_color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+		padding-bottom: 50%;
+	}
+}
+
 @import "../../bower_components/bootstrap/scss/bootstrap.scss"
