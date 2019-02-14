@@ -1,0 +1,6 @@
+{
+	"commands": [
+		"client/resources/scripts/coffee/*.coffee : ./.compilecoffee.sh",
+		"client/resources/styles/sass/*.scss : sass client/resources/styles/sass/theme.scss:client/resources/styles/css/theme.css"
+	]
+}
