@@ -14,24 +14,21 @@
 
 <body>
 	<!-- NAVBAR  -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<a class="navbar-brand" href="#">Navbar</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-navbar fixed-top">
+		<a class="navbar-brand" href="#header">Carlos Manuel</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#about">Sobre mim <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item border-right border-left">
+					<a class="nav-link" href="#commentary">Comentarios</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					<a class="nav-link" href="#">Me contrate</a>
 				</li>
 			</ul>
 		</div>
@@ -39,46 +36,78 @@
 
 	<!-- HEADER  -->
 	<section class="section" id="header">
-		<div class="jumbotron full-height d-flex align-items-center m-0 p-0" id="header-wallpaper">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 full-height d-flex align-items-center" id="over-header"></div>
-					<div class="col-md-6 full-height d-flex align-items-center" id="description">
-						<div class="container bg-dark text-light">
-							<p>
-								Aqui eu coloco um textinho sobre mim<br>
-								<br>
-								dai eu coloco alguma frase de efeito de alguem famoso
-								<br>
-								<br>
-								E lógico, tenho q mudar a cor desse negocio q ta horrivel
-								<br><br>
-								alias, a imagem a esquerda tem q ser uma foto do meu rosto TOP
+
+		<div class="container-fluid full-height" id="header-wallpaper">
+			<div class="row">
+				<div class="col-lg-6 d-sm-none d-lg-flex full-height align-items-center" id="over-header"></div>
+				<div class="col-lg-6 col-sm-12 full-height d-flex align-items-center" id="description">
+
+					<!-- <p class="orange pl-3 pr-2 pt-1 pb-4">
+						Aqui eu coloco um textinho sobre mim<br>
+						<br>
+						dai eu coloco alguma frase de efeito de alguem famoso
+						<br>
+						<br>
+						E lógico, tenho q mudar a cor desse negocio q ta horrivel
+						<br><br>
+						alias, a imagem a esquerda tem q ser uma foto do meu rosto TOP
+					</p> -->
+
+					<div class="container">
+						<div class="row">
+							<p class="orange-r">Uma frase topzera aqui mto pika msm mano kkkkkkkkkkkkkkkkkkk vo fala dms</p>
+						</div>
+
+						<div class="row">
+							<p class="orange-r">Uma frase topzera aqui mto pika msm mano kkkkkkkkkkkkkkkkkkk vo fala dms</p>
+						</div>
+
+						<div class="row">
+							<p>Sipah da até pra ter umas parada fora da caixa aqui</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- ABOUT -->
+	<section class="section" id="about">
+		<div class="container-fluid text-center" id="about-intro">
+		</div>
+		<div class="container-fluid full-height" id="about-wallpaper">
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 full-height d-flex align-items-center" id="my-skills">
+					<div class="container">
+						<div class="row">
+							<p class="orange-l">
+								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
+							</p>
+						</div>
+						<div class="row">
+							<p class="orange-l">
+								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
+							</p>
+						</div>
+						<div class="row">
+							<p class="orange-l">
+								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
+							</p>
+						</div>
+						<div class="row">
+							<p class="orange-l">
+								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
+							</p>
+						</div>
+						<div class="row">
+							<p class="orange-l">
+								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
 							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ABOUT -->
-	<section class="section" id="about">
-		<div class="container-fluid text-center" id="about-intro">
-			<div class="container p-4">aaa</div>
-		</div>
-		<div class="container-fluid full-height" id="about-wallpaper">
-			<div class="row">
-				<div class="col-md-6 full-height d-flex align-items-center" id="my-skills">
-					<div class="container bg-dark text-light">
-						<p>
-							AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
-							<br>
-							<br>
-							eu te amo NICOLINDA
-						</p>
-					</div>
-				</div>
+				<div class="col-lg-6 d-sm-none d-lg-flex full-height align-items-center" id="over-about"></div>
 			</div>
 		</div>
 	</section>
@@ -86,20 +115,22 @@
 	<!-- COMMENTARY -->
 	<section class="section" id="commentary">
 		<div class="container-fluid text-center" id="commentary-intro">
-			<div class="container p-4">aaaaaaaaa</div>
+
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6 border-right border-dark">
+				<div class="col-lg-6 border-right border-dark">
 					<div class="container">
-						<div class="row rounded border boder-dark p-3 m-3 bg-light text-dark">aaaa</div>
-						<div class="row rounded border boder-dark p-3 m-3 bg-light text-dark">aaaa</div>
-						<div class="row rounded border boder-dark p-3 m-3 bg-light text-dark">aaaa</div>
-						<div class="row rounded border boder-dark p-3 m-3 bg-light text-dark">aaaa</div>
-						<div class="row rounded border boder-dark p-3 m-3 bg-light text-dark">aaaa</div>
+						<div class="row p-3 pr-5 m-3 text-dark commentary-box">
+							<p class="bg-light pr-3 pl-1 pt-1 pb-2 w-100 commentary-content">
+								aaaa
+							</p>
+							<span class="ml-auto font-italic font-weight-bold bg-light author-name pr-1 pl-1">AAAAA</span>
+						</div>
+
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-sm-12">
 					<div class="container">
 						<form action="" class="m-3">
 							<div class="form-group">

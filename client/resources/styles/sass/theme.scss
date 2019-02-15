@@ -1,8 +1,59 @@
-$description_color: #abc;
+@import "colors";
+@import url('https://fonts.googleapis.com/css?family=Felipa');
+
+$input-border-radius:                   0;
+$input-border-radius-lg:                0;
+$input-border-radius-sm:                0;
+$main-color: $light;
+$font-family-base:            monospace;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+section {
+	background-color: $secondary;
+}
+
+.bg-navbar {
+	// background-image: linear-gradient(-0.5deg, rgba(0, 0, 0, 0) 20%, $primary 21%);
+	background-color: $light;
+}
+
+p.orange-r {
+	color: $primary;
+
+	padding: 1em 2em 3em 1em;
+
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 5%, $info 5.1%);
+}
+
+p.orange-l {
+	color: $primary;
+
+	padding: 1em 2em 3em 1em;
+
+	background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 5%, $info 5.1%);
+}
+
+.commentary-box {
+	background-image: linear-gradient(-95deg, rgba(0, 0, 0, 0) 5%, $info 5.1%);
+}
+
+.commentary-content {
+	// background-image: linear-gradient(-120deg, rgba(0, 0, 0, 0) 5%, $primary 5%);
+}
+
+span.author-name::before {
+	content: "- ";
+}
 
 .full-height {
 	height: 100vh;
 }
+
 
 #header-wallpaper {
 	background-image: url('/images/profile.jpg');
@@ -14,10 +65,6 @@ $description_color: #abc;
 	@media screen and (orientation: portrait) {
 		background-size: auto 100%;
 	}
-}
-
-#over-header {
-	background-image: linear-gradient(190deg, rgba(0, 0, 0, 0) 95%, $description_color 95.1%, $description_color);
 }
 
 #about-wallpaper {
@@ -32,42 +79,64 @@ $description_color: #abc;
 	}
 }
 
+#over-header {
+	@media screen and (orientation: landscape) {
+		background-image: -webkit-linear-gradient(100deg, rgba(0, 0, 0, 0) 95%, $main-color 95.1%, $main-color);
+		background-image: -o-linear-gradient(100deg, rgba(0, 0, 0, 0) 95%, $main-color 95.1%, $main-color);
+		background-image: linear-gradient(190deg, rgba(0, 0, 0, 0) 95%, $main-color 95.1%, $main-color);
+	}
+}
+
+#over-about {
+	@media screen and (orientation: landscape) {
+		background-image: -webkit-linear-gradient(280deg, rgba(0, 0, 0, 0) 95%, $main-color 95.1%, $main-color);
+		background-image: -o-linear-gradient(280deg, rgba(0, 0, 0, 0) 95%, $main-color 95.1%, $main-color);
+		background-image: linear-gradient(10deg, rgba(0, 0, 0, 0) 95%, $main-color 95.1%, $main-color);
+	}
+}
+
+#about-intro, #commentary-intro {
+	height: 5em;
+}
+
 #about-intro {
-	background-color: $description_color;
+	background-color: $main-color;
 }
 
 #commentary-intro {
-	background-image: linear-gradient(-1deg, rgba(0, 0, 0, 0) 30%, $description_color 30.6%, $description_color);
+	background-image: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0) 30%, $main-color 30.6%, $main-color);
+	background-image: -o-linear-gradient(271deg, rgba(0, 0, 0, 0) 30%, $main-color 30.6%, $main-color);
+	background-image: linear-gradient(1deg, rgba(0, 0, 0, 0) 30%, $main-color 30.6%, $main-color);
 }
 
 #description {
 	@media screen and (orientation: landscape) {
-		background-image: -webkit-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
-		background-image: -o-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
-		background-image: linear-gradient(100deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		background-image: -webkit-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, $main-color 20.1%, $main-color);
+		background-image: -o-linear-gradient(10deg, rgba(0, 0, 0, 0) 20%, $main-color 20.1%, $main-color);
+		background-image: linear-gradient(100deg, rgba(0, 0, 0, 0) 20%, $main-color 20.1%, $main-color);
 		padding-left: 20%
 	}
 
 	@media screen and (orientation: portrait) {
-		background-image: -webkit-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, $description_color 50.1%, $description_color);
-		background-image: -o-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, $description_color 50.1%, $description_color);
-		background-image: linear-gradient(170deg, rgba(0, 0, 0, 0) 50%, $description_color 50.1%, $description_color);
-		padding-top: 50%
+		background-image: -webkit-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, $main-color 50.1%, $main-color);
+		background-image: -o-linear-gradient(80deg, rgba(0, 0, 0, 0) 50%, $main-color 50.1%, $main-color);
+		background-image: linear-gradient(170deg, rgba(0, 0, 0, 0) 50%, $main-color 50.1%, $main-color);
+		padding-top: 50%;
 	}
 }
 
 #my-skills {
 	@media screen and (orientation: landscape) {
-		background-image: -webkit-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
-		background-image: -o-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
-		background-image: linear-gradient(-80deg, rgba(0, 0, 0, 0) 20%, $description_color 20.1%, $description_color);
+		background-image: -webkit-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, $main-color 20.1%, $main-color);
+		background-image: -o-linear-gradient(-350deg, rgba(0, 0, 0, 0) 20%, $main-color 20.1%, $main-color);
+		background-image: linear-gradient(-80deg, rgba(0, 0, 0, 0) 20%, $main-color 20.1%, $main-color);
 		padding-right: 20%;
 	}
 
 	@media screen and (orientation: portrait) {
-		background-image: -webkit-linear-gradient(-100deg, $description_color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
-		background-image: -o-linear-gradient(-100deg, $description_color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
-		background-image: linear-gradient(-190deg, $description_color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+		background-image: -webkit-linear-gradient(-100deg, $main-color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+		background-image: -o-linear-gradient(-100deg, $main-color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
+		background-image: linear-gradient(-190deg, $main-color 50%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0));
 		padding-bottom: 50%;
 	}
 }
