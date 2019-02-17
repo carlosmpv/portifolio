@@ -9,7 +9,8 @@ import (
 
 func main() {
 	server := gin.Default()
-	database := database.GetDatabase()
+	db := database.GetDatabase()
+	database.MigrateAll(db)
 
 	server.Static("/view", "client/view")
 	server.Static("/styles", "client/resources/styles")
@@ -18,17 +19,18 @@ func main() {
 	server.Static("/images", "client/resources/images")
 
 	server.GET("/", func(c *gin.Context) { c.Redirect(302, "/view") })
+	commentary := server.Group("commentary")
 
-	server.POST("/commentary/comment", func(c *gin.Context) {
-		rest.CreateEditCommentary(c, database)
+	commentary.POST("/comment", func(c *gin.Context) {
+		rest.CreateEditCommentary(c, db)
 	})
 
-	server.GET("/commentary/list", func(c *gin.Context) {
-		rest.ListCommentaries(c, database)
+	commentary.GET("/list", func(c *gin.Context) {
+		rest.ListCommentaries(c, db)
 	})
 
-	server.GET("/commentary/top", func(c *gin.Context) {
-		rest.TopCommentaries(c, database)
+	commentary.GET("/top", func(c *gin.Context) {
+		rest.TopCommentaries(c, db)
 	})
 
 	server.Run(":8080")

@@ -9,37 +9,59 @@
 	<script src="/libs/popper.js/dist/umd/popper.js" charset="utf-8"></script>
 	<script src="/libs/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
 
+	<script src="/scripts/js/content.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="/styles/css/theme.css">
 </head>
 
 <body>
 	<!-- NAVBAR  -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-navbar fixed-top">
-		<a class="navbar-brand" href="#header">Carlos Manuel</a>
+		<a class="navbar-brand" href="#overview">Carlos M.</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
+				<li class="nav-item border-right">
 					<a class="nav-link" href="#about">Sobre mim <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item border-right border-left">
-					<a class="nav-link" href="#commentary">Comentarios</a>
+				<li class="nav-item border-right">
+					<a class="nav-link" href="#skills">Habilidades</a>
+				</li>
+				<li class="nav-item border-right">
+					<a class="nav-link" href="#commentary">Comentários</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Me contrate</a>
+					<a class="nav-link" href="#hire-me">Me contrate</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
-	<!-- HEADER  -->
-	<section class="section" id="header">
+	<!-- OVERVIEW -->
+	<section class="section" id="overview">
+		<div class="container-fluid full-height p-0" id="overview-wallpaper">
+			<div class="container-fluid full-height" id="overview-decoration">
+				<div class="row">
+					<div class="col-lg-6 col-sm-12 offset-lg-6 full-height d-flex align-items-center">
+						<div class="container">
+							<div class="row">
+								<p class="presentation w-100">aaaaa</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		<div class="container-fluid full-height" id="header-wallpaper">
+	<!-- ABOUT  -->
+	<section class="section" id="about">
+		<div class="container-fluid text-center" id="about-intro">
+		</div>
+		<div class="container-fluid full-height" id="about-wallpaper">
 			<div class="row">
-				<div class="col-lg-6 d-sm-none d-lg-flex full-height align-items-center" id="over-header"></div>
+				<div class="col-lg-6 d-sm-none d-lg-flex full-height align-items-center" id="over-about"></div>
 				<div class="col-lg-6 col-sm-12 full-height d-flex align-items-center" id="description">
 
 					<!-- <p class="orange pl-3 pr-2 pt-1 pb-4">
@@ -55,11 +77,11 @@
 
 					<div class="container">
 						<div class="row">
-							<p class="orange-r">Uma frase topzera aqui mto pika msm mano kkkkkkkkkkkkkkkkkkk vo fala dms</p>
+							<p class="orange-r w-100">Uma frase topzera aqui </p>
 						</div>
 
 						<div class="row">
-							<p class="orange-r">Uma frase topzera aqui mto pika msm mano kkkkkkkkkkkkkkkkkkk vo fala dms</p>
+							<p class="orange-r w-100">Uma frase topzera aqui mto pika msm mano kkkkkkkkkkkkkkkkkkk vo fala dms</p>
 						</div>
 
 						<div class="row">
@@ -72,11 +94,11 @@
 		</div>
 
 	</section>
-	<!-- ABOUT -->
-	<section class="section" id="about">
-		<div class="container-fluid text-center" id="about-intro">
+	<!-- skills -->
+	<section class="section" id="skills">
+		<div class="container-fluid text-center" id="skills-intro">
 		</div>
-		<div class="container-fluid full-height" id="about-wallpaper">
+		<div class="container-fluid full-height" id="skills-wallpaper">
 			<div class="row">
 				<div class="col-lg-6 col-sm-12 full-height d-flex align-items-center" id="my-skills">
 					<div class="container">
@@ -86,70 +108,140 @@
 							</p>
 						</div>
 						<div class="row">
-							<p class="orange-l">
+							<p class="orange-l w-100">
 								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
 							</p>
 						</div>
 						<div class="row">
-							<p class="orange-l">
+							<p class="orange-l w-100">
 								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
 							</p>
 						</div>
 						<div class="row">
-							<p class="orange-l">
+							<p class="orange-l w-100">
 								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
 							</p>
 						</div>
 						<div class="row">
-							<p class="orange-l">
+							<p class="orange-l w-100">
 								AQUI VAI TER UMA LISTONA TOP DAS MINHAS HABILIDADES
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 d-sm-none d-lg-flex full-height align-items-center" id="over-about"></div>
+				<div class="col-lg-6 d-sm-none d-lg-flex full-height align-items-center" id="over-skills"></div>
 			</div>
 		</div>
 	</section>
 
 	<!-- COMMENTARY -->
 	<section class="section" id="commentary">
-		<div class="container-fluid text-center" id="commentary-intro">
-
-		</div>
+		<div class="container-fluid text-center" id="commentary-intro"></div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 border-right border-dark">
-					<div class="container">
-						<div class="row p-3 pr-5 m-3 text-dark commentary-box">
-							<p class="bg-light pr-3 pl-1 pt-1 pb-2 w-100 commentary-content">
-								aaaa
-							</p>
-							<span class="ml-auto font-italic font-weight-bold bg-light author-name pr-1 pl-1">AAAAA</span>
-						</div>
+				<h1 class="mx-auto text-center">FAÇA SEU COMENTÁRIO</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="container" id="top-commentaries">
+
+
 
 					</div>
 				</div>
-				<div class="col-lg-6 col-sm-12">
+				<div class="col-lg-6 col-sm-12 d-flex align-items-center">
 					<div class="container">
-						<form action="" class="m-3">
+						<form class="m-3" mthod="POST" id="comment-form">
 							<div class="form-group">
-								<input type="text" class="form-control" name="author" id="author" aria-describedby="authorHelp" placeholder="Enter your name here.">
-								<small id="authorHelp" class="form-text text-muted">It doesn't have to be your real name.</small>
+								<input type="text" class="form-control" name="author" id="author" aria-describedby="authorHelp" placeholder="Como deseja se apresentar?">
+								<small id="authorHelp" class="form-text text-muted">Não há que colocar seu nome verdadeiro.</small>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter your email here.">
-								<small id="emailHelp" class="form-text text-muted">You will receive a confirmation email.</small>
+								<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Informe seu e-mail.">
+								<small id="emailHelp" class="form-text text-muted">Você recebera uma confirmação por email.</small>
 							</div>
 							<div class="form-group">
-								<textarea name="content" id="commentary-content" cols="30" rows="3" class="form-control" placeholder="Type your commentary here"></textarea>
+								<textarea name="content" id="commentary-content" cols="30" rows="3" class="form-control" placeholder="Escreva aqui seu comentário"></textarea>
 							</div>
+							<button class="btn btn-info ml-auto text-primary" type="submit">Comentar</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- HIRE ME -->
+	<section class="section" id="hire-me">
+		<div class="container-fluid" id="hire-me-intro"></div>
+		<div class="container-fluid bg-primary text-center pt-4 pb-4">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<h1>Free lancer</h1>
+					<div class="container p-4 text-left">
+
+						<div class="row">
+							<div class="mt-2 mb-2 orange-l w-100">
+								<p class="bg-light text-secondary pr-3 pl-1 pt-1 pb-2 w-100 commentary-content">
+									aaaa
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="mt-2 mb-2 orange-l w-100">
+								<p class="bg-light text-secondary pr-3 pl-1 pt-1 pb-2 w-100 commentary-content">
+									aaaa
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="mt-2 mb-2 orange-l w-100">
+								<p class="bg-light text-secondary pr-3 pl-1 pt-1 pb-2 w-100 commentary-content">
+									aaaa
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<h1>Funcionário</h1>
+					<div class="container p-4 text-left">
+						<div class="row">
+							<div class="mt-2 mb-2 orange-l w-100">
+								<p class="bg-light text-secondary pr-3 pl-1 pt-1 pb-2 w-100 commentary-content">
+									aaaa
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="mt-2 mb-2 orange-l w-100">
+								<p class="bg-light text-secondary pr-3 pl-1 pt-1 pb-2 w-100 commentary-content">
+									aaaa
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container-fluid bg-dark text-light">
+			<div class="row">
+				<div class="col-md-6">
+					<p class="footer-text">
+						Site projetado, desenvolvido e desenhado por Carlos Manuel de Jesus Puentes Valdes.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
